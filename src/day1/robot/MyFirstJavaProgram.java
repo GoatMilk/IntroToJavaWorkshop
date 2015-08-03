@@ -7,8 +7,17 @@ public class MyFirstJavaProgram {
 		
 		// START HERE
 
-		new Robot();
+		Robot velma = new Robot();
 		
+		for (int i = 0; i < 360; i++) {
+			velma.penDown();
+			velma.setSpeed(100);
+			velma.setRandomPenColor();
+			velma.move(10);
+			velma.turn(1);
+		} 
+				
 		
 	}
+	
 }
